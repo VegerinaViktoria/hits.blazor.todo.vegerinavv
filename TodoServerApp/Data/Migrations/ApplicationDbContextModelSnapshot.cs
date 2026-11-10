@@ -232,12 +232,14 @@ namespace TodoServerApp.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("FinishDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -248,28 +250,28 @@ namespace TodoServerApp.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2026, 10, 30, 21, 9, 59, 68, DateTimeKind.Local).AddTicks(4349),
+                            CreatedDate = new DateTime(2026, 11, 10, 19, 14, 58, 787, DateTimeKind.Local).AddTicks(9086),
                             Description = "Описание задачи 1",
                             Title = "Задача 1"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2026, 10, 30, 21, 9, 59, 68, DateTimeKind.Local).AddTicks(4366),
+                            CreatedDate = new DateTime(2026, 11, 10, 19, 14, 58, 787, DateTimeKind.Local).AddTicks(9104),
                             Description = "Описание задачи 2",
                             Title = "Задача 2"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2026, 10, 30, 21, 9, 59, 68, DateTimeKind.Local).AddTicks(4367),
+                            CreatedDate = new DateTime(2026, 11, 10, 19, 14, 58, 787, DateTimeKind.Local).AddTicks(9106),
                             Description = "Описание задачи 3",
                             Title = "Задача 3"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2026, 10, 30, 21, 9, 59, 68, DateTimeKind.Local).AddTicks(4368),
+                            CreatedDate = new DateTime(2026, 11, 10, 19, 14, 58, 787, DateTimeKind.Local).AddTicks(9107),
                             Description = "Описание задачи 4",
                             Title = "Задача 4"
                         });
